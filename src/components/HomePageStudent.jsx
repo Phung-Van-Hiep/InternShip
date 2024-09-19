@@ -2,20 +2,21 @@ import React, { useState, useEffect } from "react";
 import Header from "../block/Header";
 import Footer from "../block/Footer";
 import { Outlet, useNavigate } from "react-router-dom";
-import { Space, Table, Tag, Spin } from 'antd';
+import { Space, Table, Tag, Spin, Button } from 'antd';
 import axios from 'axios';
 
 const HomePageStudent = () => {
   const ma_gv = localStorage.getItem('username');
-  const [searchTerm, setSearchTerm] = useState(""); 
+  const [searchTerm, setSearchTerm] = useState("");
   const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(true);
-  const [data, setData] = useState(JSON.parse(localStorage.getItem('studentData')) || []);
+  const [classData, setClassData] = useState([]); // Dữ liệu lớp học
   const [loading, setLoading] = useState(false);
+  const [expandedClass, setExpandedClass] = useState(null);
 
   const handleSearch = (event) => {
     setIsVisible(false);
-    event.preventDefault(); 
+    event.preventDefault();
     navigate(`/details/information?query=${searchTerm}`);
   };
 
@@ -26,21 +27,19 @@ const HomePageStudent = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      if (data.length === 0) { // Only fetch if data is empty
+      const storedData = localStorage.getItem('classData');
+      
+      if (storedData) {
+        setClassData(JSON.parse(storedData)); // Load from localStorage if data exists
+      } else {
         try {
           setLoading(true);
-          const response = await axios.get(`https://myapp-api-wds1.onrender.com/api/instructor?a=${ma_gv}`);
+          const response = await axios.get(`https://myapp-api-wds1.onrender.com/api/instructor2?a=${ma_gv}`);
           const result = response.data;
           console.log('Dữ liệu API:', result);
           if (result && result.ND) {
-            const fetchedData = result.ND.map(student => ({
-              key: student.MSV,
-              student_code: student.MSV,
-              name: student.TEN_SV,
-              tags: [student.MUC_DO]
-            }));
-            setData(fetchedData);
-            localStorage.setItem('studentData', JSON.stringify(fetchedData)); // Store data in localStorage
+            setClassData(result.ND); // Lưu trữ dữ liệu lớp học
+            localStorage.setItem('classData', JSON.stringify(result.ND)); // Save to localStorage
           }
         } catch (error) {
           console.error('Lỗi khi lấy dữ liệu:', error);
@@ -51,44 +50,32 @@ const HomePageStudent = () => {
     };
 
     fetchData();
-  }, [data.length, ma_gv]);
+  }, [ma_gv]);
 
-  const columns = [
+  const studentColumns = [
     {
       title: 'Mã sinh viên',
-      dataIndex: 'student_code',
-      key: 'student_code',
+      dataIndex: 'MSV',
+      key: 'MSV',
     },
     {
       title: 'Tên sinh viên',
-      dataIndex: 'name',
-      key: 'name',
+      dataIndex: 'TEN_SV',
+      key: 'TEN_SV',
       render: (text) => <a>{text}</a>,
     },
     {
       title: 'Mức độ hoàn thành',
-      key: 'tags',
-      dataIndex: 'tags',
-      render: (_, { tags }) => (
-        <>
-          {tags.map((tag) => {
-            let color = tag.length > 10 ? 'red' : 'blue';
-            if (tag === 'CHUA_HOAN_THANH') {
-              return (
-                <Tag color={color} key={tag}>
-                  Chưa hoàn thành
-                </Tag>
-              );
-            } else {
-              return (
-                <Tag color={color} key={tag}>
-                  Hoàn thành
-                </Tag>
-              );
-            }
-          })}
-        </>
-      ),
+      key: 'MUC_DO',
+      dataIndex: 'MUC_DO',
+      render: (tag) => {
+        let color = tag.length > 10 ? 'red' : 'blue';
+        if (tag === 'CHUA_HOAN_THANH') {
+          return <Tag color={color}>Chưa hoàn thành</Tag>;
+        } else {
+          return <Tag color={color}>Hoàn thành</Tag>;
+        }
+      },
     },
     {
       title: '',
@@ -96,12 +83,30 @@ const HomePageStudent = () => {
       render: (_, record) => (
         <Space size="middle">
           <button
-            onClick={() => handleDetail(record.student_code)}
+            onClick={() => handleDetail(record.MSV)}
             className="text-blue-500"
           >
             Xem chi tiết
           </button>
         </Space>
+      ),
+    },
+  ];
+
+  const classColumns = [
+    {
+      title: 'Tên lớp',
+      dataIndex: 'TEN_LOP',
+      key: 'TEN_LOP',
+      width: 500
+    },
+    {
+      title: 'ACtion',
+      key: 'action',
+      render: (_, record) => (
+        <Button onClick={() => setExpandedClass(expandedClass === record.TEN_LOP ? null : record.TEN_LOP)}>
+          {expandedClass === record.TEN_LOP ? "Ẩn đi" : "Xem danh sách"}
+        </Button>
       ),
     },
   ];
@@ -158,10 +163,32 @@ const HomePageStudent = () => {
               <div className="flex items-center justify-center mt-20">
                 <Spin size="large" />
               </div>
-            )
-              : (
-                isVisible && <Table className="m-40" columns={columns} dataSource={data} />
-              )}
+            ) : (
+              isVisible && (
+                <>
+                <div className="m-40">
+                  {classData.map((classItem) => (
+                    <div key={classItem.TEN_LOP}>
+                      <Table
+                        columns={classColumns}
+                        dataSource={[classItem]}
+                        pagination={false}
+                        showHeader={false}
+                        rowKey="TEN_LOP"
+                      />
+                      {expandedClass === classItem.TEN_LOP && (
+                        <Table
+                          columns={studentColumns}
+                          dataSource={classItem.DS}
+                          pagination={false}
+                        />
+                      )}
+                    </div>
+                  ))}
+                </div>
+                </>
+              )
+            )}
           </div>
         </div>
         <Footer />

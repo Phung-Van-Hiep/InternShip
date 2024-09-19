@@ -338,29 +338,6 @@ const InformationPage = () => {
             showHeader={false}
             className="rounded-lg"
           />
-
-          {/* <Divider orientation="center mt-10">
-            Đánh giá mức độ hoàn thành chương trình đào tạo
-          </Divider>
-          <div className="flex flex-col items-center mt-4">
-            {data?.MUC_DO === "CHUA_HOAN_THANH" ? (
-              <>
-                <div className="text-6xl text-blue-500 font-bold mb-4">
-                  Chưa thể tốt nghiệp
-                </div>
-                <Button className="mt-10" type="primary" onClick={handleShowDetails}>
-                  {showDetails ? "Ẩn" : "Xem"}
-                </Button>
-              </>
-            ) : data?.MUC_DO === "HOAN_THANH" ? (
-              <div className="text-6xl text-blue-500 font-bold">
-                Có thể tốt nghiệp
-              </div>
-            ) : null}
-          </div> */}
-
-          {/* Bảng chi tiết khi nhấn nút "Xem chi tiết" */}
-          {/* {showDetails && ( */}
           <div className="mt-8">
             <Divider orientation="center">
               Thông tin chi tiết môn học còn lại
@@ -379,7 +356,6 @@ const InformationPage = () => {
             // showHeader={false}
             />
           </div>
-          {/* )} */}
         </div>
       )}
     </div>
