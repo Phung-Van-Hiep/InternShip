@@ -28,7 +28,7 @@ const HomePageStudent = () => {
   useEffect(() => {
     const fetchData = async () => {
       const storedData = localStorage.getItem('classData');
-      
+
       if (storedData) {
         setClassData(JSON.parse(storedData)); // Load from localStorage if data exists
       } else {
@@ -116,6 +116,10 @@ const HomePageStudent = () => {
       <div className="">
         <Header />
         <div className="content-homepage min-h-screen">
+          <div className="text-xl text-center mt-10" style={{color:"#333333"}}>
+            Hiện tại chương trình chỉ cài đặt xem được danh sách lớp TT35CL01, chỉ cài đặt xem được CTĐT K35 Khoa Toán-Tin.
+            Nhưng bạn vẫn có thể sử dụng thanh tìm kiếm để nhập mã sinh viên K35 ngành Công nghệ thông tin
+          </div>
           <form className="w-2/5 mx-auto mt-10" onSubmit={handleSearch}>
             <label
               htmlFor="default-search"
@@ -166,26 +170,34 @@ const HomePageStudent = () => {
             ) : (
               isVisible && (
                 <>
-                <div className="m-40">
-                  {classData.map((classItem) => (
-                    <div key={classItem.TEN_LOP}>
-                      <Table
-                        columns={classColumns}
-                        dataSource={[classItem]}
-                        pagination={false}
-                        showHeader={false}
-                        rowKey="TEN_LOP"
-                      />
-                      {expandedClass === classItem.TEN_LOP && (
-                        <Table
-                          columns={studentColumns}
-                          dataSource={classItem.DS}
-                          pagination={false}
-                        />
-                      )}
-                    </div>
-                  ))}
-                </div>
+                  <div className="m-40">
+
+                    {classData.map((classItem) => {
+                      // console.log(classItem); // Kiểm tra dữ liệu của classItem
+                      return (
+                        <div key={classItem.TEN_LOP}>
+                          <Table
+                            columns={classColumns}
+                            dataSource={[classItem]}
+                            pagination={false}
+                            showHeader={false}
+                            rowKey="TEN_LOP"
+                          />
+                          {expandedClass === classItem.TEN_LOP && classItem.DS.length > 0 && (
+                            <Table
+                              columns={studentColumns}
+                              dataSource={classItem.DS}
+                              pagination={false}
+                              rowKey="MSV" // Đảm bảo rằng MSV của sinh viên là duy nhất
+                            />
+                          )}
+                          {expandedClass === classItem.TEN_LOP && classItem.DS.length === 0 && (
+                            <div className="text-center text-xl">Không có sinh viên trong lớp này.</div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </>
               )
             )}

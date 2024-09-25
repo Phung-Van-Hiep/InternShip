@@ -1,0 +1,613 @@
+{
+  "MSV": "A44372",
+  "TEN_SV": "Phạm Tiến Dũng",
+  "ND": [
+    {
+      "TEN_LOP": "TT35CL01",
+      "MUC_DO": "CHUA_HOAN_THANH",
+      "ND": {
+        "DAI_CUONG_CON_LAI": {
+          "DS": [
+            {
+              "MA_MON": "GE333",
+              "TEN_MON": "Tiếng Anh trung cấp 3",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Bạn còn thiếu 64 tín chỉ để học",
+                "Bạn cần phải học 1 trong 2 môn: GE200 hoặc GE500"
+              ]
+            },
+            {
+              "MA_MON": "ML113",
+              "TEN_MON": "Triết học Mác - Lênin",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "ML114",
+              "TEN_MON": "Kinh tế chính trị Mác - Lênin",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "ML115",
+              "TEN_MON": "Chủ nghĩa xã hội khoa học",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "ML202",
+              "TEN_MON": "Tư tưởng Hồ Chí Minh",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "ML204",
+              "TEN_MON": "Lịch sử Đảng Cộng sản Việt Nam",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CS102",
+              "TEN_MON": "Công dân số",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "NA151",
+              "TEN_MON": "Khoa học môi trường",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "VL101",
+              "TEN_MON": "Tiếng Việt thực hành",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "SH131",
+              "TEN_MON": "Pháp luật đại cương",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "PG100",
+              "TEN_MON": "Giáo dục thể chất",
+              "STC": 4,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "PG121",
+              "TEN_MON": "Giáo dục quốc phòng",
+              "STC": 4,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "MA101",
+              "TEN_MON": "Logic, suy luận toán học và kỹ thuật đếm",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CS100",
+              "TEN_MON": "Tin đại cương",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "EC102",
+              "TEN_MON": "Nhập môn kinh tế học",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "GE111",
+              "TEN_MON": "Tiếng Anh sơ cấp 1",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "GE112",
+              "TEN_MON": "Tiếng Anh sơ cấp 2",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "GE121",
+              "TEN_MON": "Tiếng Anh sơ trung cấp 1",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "GE222",
+              "TEN_MON": "Tiếng Anh sơ trung cấp 2",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "GE231",
+              "TEN_MON": "Tiếng Anh trung cấp 1",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "GE232",
+              "TEN_MON": "Tiếng Anh trung cấp 2",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "ND": [
+                {
+                  "TEN": "Nhật",
+                  "DIEU_KIEN": "Bạn đã hoàn thành tổ hợp này",
+                  "DS": [
+                    {
+                      "MA_MON": "GJ101",
+                      "TEN_MON": "Tiếng Nhật 1",
+                      "STC": 2,
+                      "TRANG_THAI": [
+                        "Đã học"
+                      ]
+                    },
+                    {
+                      "MA_MON": "GJ102",
+                      "TEN_MON": "Tiếng Nhật 2",
+                      "STC": 2,
+                      "TRANG_THAI": [
+                        "Đã học"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "CHU_THICH": "Bạn đã hoàn thành nhóm này"
+            }
+          ],
+          "TRANG_THAI": "CHUA_HOAN_THANH"
+        },
+        "CO_SO_CON_LAI": {
+          "DS": [
+            {
+              "MA_MON": "MA104",
+              "TEN_MON": "Số và cấu trúc đại số",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "MA110",
+              "TEN_MON": "Giải tích 1",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "MA111",
+              "TEN_MON": "Giải tích 2",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "MA120",
+              "TEN_MON": "Đại số tuyến tính",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "MA239",
+              "TEN_MON": "Xác suất thống kê",
+              "STC": 4,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "MI201",
+              "TEN_MON": "Toán rời rạc",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CF213",
+              "TEN_MON": "Cấu trúc dữ liệu và giải thuật",
+              "STC": 4,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CS110",
+              "TEN_MON": "Kỹ thuật số",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CS121",
+              "TEN_MON": "Ngôn ngữ lập trình",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CS122",
+              "TEN_MON": "Lập trình hướng đối tượng",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CS212",
+              "TEN_MON": "Kiến trúc máy tính",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "CS315",
+              "TEN_MON": "Nguyên lý hệ điều hành",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "IS222",
+              "TEN_MON": "Cơ sở dữ liệu",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "NW212",
+              "TEN_MON": "Mạng máy tính",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            }
+          ],
+          "TRANG_THAI": "HOAN_THANH"
+        },
+        "BAT_BUOC_CON_LAI": {
+          "DS": [
+            {
+              "MA_MON": "IS330",
+              "TEN_MON": "Dữ liệu lớn",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "IS332",
+              "TEN_MON": "Phân tích thiết kế hướng đối tượng",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "IS334",
+              "TEN_MON": "Quản lí dự án hệ thống thông tin",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "MI322",
+              "TEN_MON": "Trí tuệ nhân tạo và công nghệ tri thức",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "SE302",
+              "TEN_MON": "Công nghệ phần mềm ",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "CS314",
+              "TEN_MON": "Lập trình ứng dụng di động",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "IS430",
+              "TEN_MON": "Công nghệ blockchain",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "IT332",
+              "TEN_MON": "Internet Of Thingss",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "IT333",
+              "TEN_MON": "Công nghệ Web",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "ITT380",
+              "TEN_MON": "Dự án Công nghệ thông tin",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "IP404",
+              "TEN_MON": "Thực tập ngành Công nghệ thông tin",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Chưa học, có thể đăng kí"
+              ]
+            },
+            {
+              "MA_MON": "CF231",
+              "TEN_MON": "Lý thuyết thông tin và mã hóa",
+              "STC": 2,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "IS314",
+              "TEN_MON": "Hệ thống thông tin",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            },
+            {
+              "MA_MON": "IS322",
+              "TEN_MON": "Hệ quản trị cơ sở dữ liệu",
+              "STC": 3,
+              "TRANG_THAI": [
+                "Đã học"
+              ]
+            }
+          ],
+          "TRANG_THAI": "CHUA_HOAN_THANH"
+        },
+        "LUA_CHON_CON_LAI": {
+          "DS": [
+            {
+              "ND": [
+                {
+                  "TEN": "Lựa chọn 1 CNTT 35",
+                  "DIEU_KIEN": "Bạn cần học thêm 5 tín chỉ thông qua các môn dưới đây",
+                  "DS": [
+                    {
+                      "MA_MON": "IS326",
+                      "TEN_MON": "Khai phá dữ liệu",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "CS223",
+                      "TEN_MON": "Lập trình Java",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "CS224",
+                      "TEN_MON": "Lập trình .Net",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "CS320",
+                      "TEN_MON": "Học máy",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "CS323",
+                      "TEN_MON": "Lập trình JavaScript",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "IT320",
+                      "TEN_MON": "Lập trình Python",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "IS324",
+                      "TEN_MON": "Phân tích dữ liệu",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "SE312",
+                      "TEN_MON": "Kiểm thử và đảm bảo chất lượng phần mềm",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "MA238",
+                      "TEN_MON": "Thống kê nâng cao",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    },
+                    {
+                      "MA_MON": "MI312",
+                      "TEN_MON": "Đồ họa",
+                      "STC": 2,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "CHU_THICH": "Bạn cần hoàn thành nhóm này"
+            }
+          ],
+          "TRANG_THAI": "CHUA_HOAN_THANH"
+        },
+        "TOT_NGHIEP_CON_LAI": {
+          "DS": [
+            {
+              "ND": [
+                {
+                  "TEN": "KLTN: CNTT 35",
+                  "DIEU_KIEN": "Bạn cần học hết các môn trong tổ hợp này",
+                  "DS": [
+                    {
+                      "MA_MON": "IT499",
+                      "TEN_MON": "KLTN ngành Công nghệ thông tin",
+                      "STC": 6,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "TEN": "CĐTN: CNTT 35",
+                  "DIEU_KIEN": "Bạn cần học hết các môn trong tổ hợp này",
+                  "DS": [
+                    {
+                      "MA_MON": "IT486",
+                      "TEN_MON": "CĐTN ngành Công nghệ thong tin",
+                      "STC": 6,
+                      "TRANG_THAI": [
+                        "Chưa học, có thể đăng kí"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "CHU_THICH": "Bạn cần hoàn thành 1 trong các tổ hợp dưới đây"
+            }
+          ],
+          "TRANG_THAI": "CHUA_HOAN_THANH"
+        },
+        "TU_DO_CON_LAI": {
+          "DS": [
+            {
+              "ND": [
+                {
+                  "TEN": "Tự do CNTT 35",
+                  "DIEU_KIEN": "Bạn cần học thêm 2 tín chỉ thông qua các môn dưới đây",
+                  "DS": [
+                    {
+                      "MA_MON": "PG120",
+                      "TEN_MON": "GDTC: Thể dục cơ bản nâng cao",
+                      "STC": 1,
+                      "TRANG_THAI": [
+                        "Đã học"
+                      ]
+                    },
+                    {
+                      "MA_MON": "AD216",
+                      "TEN_MON": "Kỹ năng sống",
+                      "STC": 3,
+                      "TRANG_THAI": [
+                        "Đã học"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "CHU_THICH": "Bạn cần hoàn thành nhóm này"
+            }
+          ],
+          "TRANG_THAI": "CHUA_HOAN_THANH"
+        }
+      }
+    }
+  ]
+}
