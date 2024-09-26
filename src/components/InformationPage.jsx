@@ -22,7 +22,7 @@ const InformationPage = () => {
       setError(null);
       try {
         const response = await axios.get(
-           `https://myapp-api-wds1.onrender.com/api/student?a=${query}`
+           `https://myappapi-production.up.railway.app/api/student?a=${query}`
         );
         // const response = await axios.get('/images/jsonformatter.json');
 
@@ -87,7 +87,7 @@ const InformationPage = () => {
     const courses = [];
     const bins = [];
 
-    // Lấy danh sách môn học từ DS nếu có
+    // Lấy danh sách môn học
     if (Array.isArray(category.DS)) {
       category.DS.forEach((item) => {
         if (item && item.CHU_THICH) {
@@ -284,29 +284,6 @@ const InformationPage = () => {
     }
   };
 
-
-  const classColumns = [
-    {
-      title: "Lớp",
-      dataIndex: "class",
-      key: "class",
-    },
-    {
-      title: "Đánh giá",
-      dataIndex: "rate",
-      key: "rate",
-    },
-    {
-      title: "",
-      key: "action",
-      render: (_, record) => (
-        <Button onClick={() => handleExpand(!expandedRowKeys.includes(record.class), record)}>
-          {expandedRowKeys.includes(record.class) ? "Thu gọn" : "Xem thêm"}
-        </Button>
-      ),
-    },
-
-  ];
 
   const classData = data?.ND
     ? data.ND.map((item) => ({

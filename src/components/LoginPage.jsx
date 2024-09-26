@@ -13,7 +13,6 @@ const LoginPage = () => {
     const [passwordError, setPasswordError] = useState('');
     const navigate = useNavigate(); // Hook để chuyển hướng
 
-
     const handleLogin = () => {
 
         let hasError = false;
@@ -43,8 +42,6 @@ const LoginPage = () => {
             } else {
                 message.error('Sai tài khoản hoặc mật khẩu. Vui lòng thử lại.'); // Hiển thị thông báo lỗi
             }
-            
-        
         }
     };
     return (

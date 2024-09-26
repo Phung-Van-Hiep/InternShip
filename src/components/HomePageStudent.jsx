@@ -30,16 +30,16 @@ const HomePageStudent = () => {
       const storedData = localStorage.getItem('classData');
 
       if (storedData) {
-        setClassData(JSON.parse(storedData)); // Load from localStorage if data exists
+        setClassData(JSON.parse(storedData)); 
       } else {
         try {
           setLoading(true);
-          const response = await axios.get(`https://myapp-api-wds1.onrender.com/api/instructor2?a=${ma_gv}`);
+          const response = await axios.get(`https://myappapi-production.up.railway.app/api/instructor2?a=${ma_gv}`);
           const result = response.data;
           console.log('Dữ liệu API:', result);
           if (result && result.ND) {
             setClassData(result.ND); // Lưu trữ dữ liệu lớp học
-            localStorage.setItem('classData', JSON.stringify(result.ND)); // Save to localStorage
+            localStorage.setItem('classData', JSON.stringify(result.ND)); 
           }
         } catch (error) {
           console.error('Lỗi khi lấy dữ liệu:', error);
