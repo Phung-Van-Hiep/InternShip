@@ -34,7 +34,7 @@ const HomePageStudent = () => {
       } else {
         try {
           setLoading(true);
-          const response = await axios.get(`https://myappapi-production.up.railway.app/api/instructor2?a=${ma_gv}`);
+          const response = await axios.get(`https://myapp-api-wds1.onrender.com/api/instructor2?a=${ma_gv}`);
           const result = response.data;
           console.log('Dữ liệu API:', result);
           if (result && result.ND) {

@@ -22,7 +22,7 @@ const InformationPage = () => {
       setError(null);
       try {
         const response = await axios.get(
-           `https://myappapi-production.up.railway.app/api/student?a=${query}`
+           `https://myapp-api-wds1.onrender.com/api/student?a=${query}`
         );
         // const response = await axios.get('/images/jsonformatter.json');
 
